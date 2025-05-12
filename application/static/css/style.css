@@ -1,0 +1,108 @@
+:root {
+    --bs-primary: #1a237e;
+    --bs-primary-rgb: 26, 35, 126;
+    --bs-secondary: #3949ab; 
+    --bs-dark-blue: #0d1442; 
+    --bs-light-blue: #7986cb;
+    --bs-highlight: #c5cae9; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Override Bootstrap primary colors */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #0e1963; 
+    border-color: #0e1963;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.btn-outline-primary {
+    color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #fff;
+}
+
+/* For links and other primary-colored elements */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+a {
+    color: var(--bs-primary);
+}
+
+a:hover {
+    color: #0e1963;
+}
+
+/* BODY */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.example-item {
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.example-item:hover {
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Progress bar styling */
+.progress {
+    height: 8px;
+}
+
+/* Key terms badges */
+.term-badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 400;
+    line-height: 1;
+    color: #212529;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+    background-color: #f0f0f0;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Chart tooltip styling */
+.topic-chart-tooltip {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.interactive {
+    cursor: pointer;
+}

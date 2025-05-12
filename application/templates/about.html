@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Document Topic Classifier</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Document Topic Classifier</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-body">
+                <h2>About Document Topic Classifier</h2>
+                <p>
+                    This application uses advanced natural language processing techniques to automatically classify text documents into topics. The underlying system combines the power of:
+                </p>
+                
+                <h4>Key Components</h4>
+                <ul>
+                    <li><strong>RoBERTa Embeddings</strong>: A state-of-the-art transformer model that converts text into high-dimensional semantic representations</li>
+                    <li><strong>UMAP Dimensionality Reduction</strong>: Reduces the high-dimensional embeddings to a manageable space while preserving important semantic relationships</li>
+                    <li><strong>K-means Clustering</strong>: Groups documents with similar meanings into distinct topics</li>
+                </ul>
+                
+                <h4>How it Works</h4>
+                <ol>
+                    <li>When you input a document, the system generates a RoBERTa embedding that captures its semantic meaning</li>
+                    <li>This embedding is then projected into the same space as our pre-trained topic clusters using UMAP</li>
+                    <li>The system calculates the proximity to each topic cluster and assigns confidence scores</li>
+                    <li>The document is classified into the most likely topic, with confidence scores shown for all categories</li>
+                </ol>
+                
+                <h4>Topics</h4>
+                <p>The system currently recognizes these main topics based on the BBC News Dataset:</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-header bg-primary text-white">Business</div>
+                            <div class="card-body">
+                                <p class="small mb-0">Content about markets, companies, economy, finance, and business trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-header bg-warning text-dark">Entertainment</div>
+                            <div class="card-body">
+                                <p class="small mb-0">Content about movies, music, celebrities, shows, and media.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">Politics</div>
+                            <div class="card-body">
+                                <p class="small mb-0">Content about government, elections, policy, and political events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-header bg-danger text-white">Sport</div>
+                            <div class="card-body">
+                                <p class="small mb-0">Content about games, teams, players, and sporting events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-3">
+                            <div class="card-header bg-info text-dark">Technology</div>
+                            <div class="card-body">
+                                <p class="small mb-0">Content about tech innovations, software, digital trends, and devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-light py-3 mt-auto border-top">
+        <div class="container text-center">
+            <p class="text-muted small mb-0">
+                AI-Powered Document Classification | Intelligent Topic Analysis Engine
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

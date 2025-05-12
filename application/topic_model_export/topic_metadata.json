@@ -1,0 +1,122 @@
+[
+  {
+    "cluster_id": 0,
+    "label": "Sport (99.8%): cup, coach, injury",
+    "dominant_category": "sport",
+    "confidence": 99.80353634577604,
+    "doc_count": 509,
+    "distinctive_terms": [
+      "cup",
+      "coach",
+      "injury",
+      "match",
+      "rugby",
+      "england",
+      "chelsea",
+      "side",
+      "win",
+      "six nations"
+    ],
+    "sample_doc_indices": [
+      713,
+      650,
+      877
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "label": "Tech (93.6%): users, software, technology",
+    "dominant_category": "tech",
+    "confidence": 93.55608591885442,
+    "doc_count": 419,
+    "distinctive_terms": [
+      "users",
+      "software",
+      "technology",
+      "mobile",
+      "computer",
+      "broadband",
+      "digital",
+      "microsoft",
+      "phone",
+      "phones"
+    ],
+    "sample_doc_indices": [
+      1407,
+      1647,
+      1695
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "label": "Business (95.6%): oil, shares, growth",
+    "dominant_category": "business",
+    "confidence": 95.63492063492063,
+    "doc_count": 504,
+    "distinctive_terms": [
+      "oil",
+      "shares",
+      "growth",
+      "economy",
+      "bank",
+      "yukos",
+      "prices",
+      "economic",
+      "market",
+      "stock"
+    ],
+    "sample_doc_indices": [
+      496,
+      49,
+      2084
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "label": "Entertainment (97.6%): film, awards, band",
+    "dominant_category": "entertainment",
+    "confidence": 97.63779527559055,
+    "doc_count": 381,
+    "distinctive_terms": [
+      "film",
+      "awards",
+      "band",
+      "festival",
+      "album",
+      "actor",
+      "award",
+      "best",
+      "actress",
+      "singer"
+    ],
+    "sample_doc_indices": [
+      1248,
+      1330,
+      1253
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "label": "Politics (96.4%): labour, election, blair",
+    "dominant_category": "politics",
+    "confidence": 96.35922330097088,
+    "doc_count": 412,
+    "distinctive_terms": [
+      "labour",
+      "election",
+      "blair",
+      "party",
+      "tory",
+      "tories",
+      "howard",
+      "mps",
+      "chancellor",
+      "lib"
+    ],
+    "sample_doc_indices": [
+      1935,
+      2193,
+      2036
+    ]
+  }
+]
